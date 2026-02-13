@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
-    <script defer src="/src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
     <title>Article Preview</title>
   </head>
   <body
@@ -32,31 +32,36 @@
             you make any room feel complete.
           </p>
         </div>
-        <footer id="footer" class="px-8 pb-5 pt-4 md:pt-0 md:pb-0">
-          <div class="flex justify-between items-center">
-            <div class="flex gap-4 items-center">
-              <img
-                src="/src/assets/img/avatar-michelle.jpg"
-                alt="A profile picture of michelle"
-                class="w-10 h-10 rounded-full"
-              />
-              <div>
-                <p class="text-dark-graish-blue font-bold text-[0.8125rem]">
-                  Michelle Appleton
-                </p>
-                <p class="text-grayish-blue text-[0.8125rem]">28 Jun 2020</p>
-              </div>
-            </div>
-            <button class="bg-light-grayish-blue rounded-full w-8 h-8">
-              <div class="flex items-center justify-center">
+        <div id="footer">
+          <footer class="px-8 pb-5 pt-4 md:pt-0 md:pb-0">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-4 items-center">
                 <img
-                  src="/src/assets/img/icon-share.svg"
-                  alt="An image of share icon"
+                  src="/src/assets/img/avatar-michelle.jpg"
+                  alt="A profile picture of michelle"
+                  class="w-10 h-10 rounded-full"
                 />
+                <div>
+                  <p class="text-dark-graish-blue font-bold text-[0.8125rem]">
+                    Michelle Appleton
+                  </p>
+                  <p class="text-grayish-blue text-[0.8125rem]">28 Jun 2020</p>
+                </div>
               </div>
-            </button>
-          </div>
-        </footer>
+              <button
+                id="share-btn"
+                class="bg-light-grayish-blue rounded-full w-8 h-8"
+              >
+                <div class="flex items-center justify-center">
+                  <img
+                    src="/src/assets/img/icon-share.svg"
+                    alt="An image of share icon"
+                  />
+                </div>
+              </button>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
   </body>
