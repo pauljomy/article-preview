@@ -6,6 +6,7 @@ import shareIcon from "./assets/img/icon-share.svg";
 const footer = document.getElementById("footer");
 const tabletIcons = document.getElementById("tablet-share-icons");
 const shareBtn = document.getElementById("share-btn");
+const shareIconEl = document.getElementById("share-icon");
 const originalFooter = footer.innerHTML;
 let isShareOpen = false;
 
@@ -29,9 +30,13 @@ document.addEventListener("click", (e) => {
     if (isShareOpen) {
       tabletIcons.innerHTML = tabletShareIcons;
       shareBtn.style.backgroundColor = "#6E8098";
+      shareIconEl.classList.add("brightness-0");
+      shareIconEl.classList.add("invert");
     } else {
       tabletIcons.innerHTML = "";
       shareBtn.style.backgroundColor = "#ECF2F8";
+      shareIconEl.classList.remove("brightness-0");
+      shareIconEl.classList.remove("invert");
     }
   } else {
     return;
