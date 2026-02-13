@@ -1,43 +1,55 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/src/style.css" />
-        <script defer src="/src/main.js"></script>
-        <title>Article Preview</title>
-    </head>
-    <body class="mx-6 my-16 bg-background">
-        <img src="/src/assets/img/drawers.jpg" alt="An image of a drawer" />
-        <div class="px-8 bg-white">
-            <h1>
-                Shift the overall look and feel by adding these wonderful
-                touches to furniture in your home
-            </h1>
-            <p>
-                Ever been in a room and felt like something was missing? Perhaps
-                it felt slightly bare and uninviting. I’ve got some simple tips
-                to help you make any room feel complete.
-            </p>
-            <div class="flex justify-between items-center">
-                <div class="flex">
-                    <img
-                        src="/src/assets/img/avatar-michelle.jpg"
-                        alt="A profile picture of michelle"
-                        class="w-10 h-10 rounded-full"
-                    />
-                    <div>
-                        <p>Michelle Appleton</p>
-                        <p>28 Jun 2020</p>
-                    </div>
-                </div>
-                <button>
-                    <img
-                        src="/src/assets/img/icon-share.svg"
-                        alt="An image of share icon"
-                    />
-                </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script defer src="/src/main.js"></script>
+    <title>Article Preview</title>
+  </head>
+  <body class="mx-6 my-16 bg-background font-family-default">
+    <div class="bg-white rounded-xl">
+      <img
+        src="/src/assets/img/drawers.jpg"
+        alt="An image of a drawer"
+        class="rounded-t-xl"
+      />
+      <div class="px-8 pb-4">
+        <h1
+          class="text-[1.25rem] leading-7 pt-8 mb-6 font-bold text-dark-graish-blue"
+        >
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="mb-8 text-desaturated-dark-blue text-[0.8125rem]">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="flex justify-between items-center">
+          <div class="flex gap-4 items-center">
+            <img
+              src="/src/assets/img/avatar-michelle.jpg"
+              alt="A profile picture of michelle"
+              class="w-10 h-10 rounded-full"
+            />
+            <div>
+              <p class="text-dark-graish-blue font-bold text-[0.8125rem]">
+                Michelle Appleton
+              </p>
+              <p class="text-grayish-blue text-[0.8125rem]">28 Jun 2020</p>
             </div>
+          </div>
+          <button class="bg-light-grayish-blue rounded-full w-8 h-8">
+            <div class="flex items-center justify-center">
+              <img
+                src="/src/assets/img/icon-share.svg"
+                alt="An image of share icon"
+              />
+            </div>
+          </button>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
