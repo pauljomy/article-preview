@@ -5,18 +5,30 @@ import shareIcon from "./assets/img/icon-share.svg";
 
 const shareBtn = document.getElementById("share-btn");
 const footer = document.getElementById("footer");
+const originalFooter = footer.innerHTML;
+let isShareOpen = false;
 
-shareBtn.addEventListener("click", () => {
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("#share-btn, #share-btn-close");
+  if (!btn) return;
+
   const isMobile = window.matchMedia("(max-width:767px)").matches;
-  if (isMobile) {
+  if (!isMobile) return;
+
+  isShareOpen = !isShareOpen;
+
+  if (isShareOpen) {
     footer.innerHTML = shareIcons;
+  } else {
+    footer.innerHTML = originalFooter;
   }
+
   console.log("Button clicked");
 });
 
 const shareIcons = `
-  <div
-    class="w-full h-19 bg-[#48556A] rounded-b-xl flex items-center justify-between px-10"
+  <div id="share-btn-close"
+    class="w-full h-20  bg-[#48556A] rounded-b-xl flex items-center justify-between px-8"
   >
     <div class="flex gap-5 items-center">
       <span class="text-[0.8125rem] text-[#9DAEC2]">SHARE</span>
