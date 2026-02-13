@@ -8,7 +8,7 @@
     <title>Article Preview</title>
   </head>
   <body
-    class="mx-6 my-16 bg-background font-family-default flex justify-center min-h-screen items-center"
+    class="mx-6 my-16 bg-background font-family-default flex flex-col justify-center min-h-screen items-center"
   >
     <div
       class="bg-white rounded-xl flex flex-col md:flex-row md:max-w-152 xl:max-w-182.5"
@@ -34,7 +34,7 @@
         </div>
         <div id="footer">
           <footer
-            class="px-8 h-20 md:h-0 md:pt-4 md:pb-4 flex flex-col justify-center"
+            class="relative px-8 h-20 md:h-0 md:pt-4 md:pb-4 flex flex-col justify-center"
           >
             <div class="flex justify-between items-center">
               <div class="flex gap-4 items-center">
@@ -58,10 +58,12 @@
                   <img
                     src="/src/assets/img/icon-share.svg"
                     alt="An image of share icon"
+                    id="share-icon"
                   />
                 </div>
               </button>
             </div>
+            <div id="tablet-share-icons"></div>
           </footer>
         </div>
       </div>
